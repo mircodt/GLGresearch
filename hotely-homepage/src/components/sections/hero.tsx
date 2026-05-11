@@ -7,6 +7,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, PlayCircle } from "lucide-react";
 
 import { content } from "@/lib/content/it";
+import { asset } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 export function Hero() {
@@ -27,11 +28,11 @@ export function Hero() {
           loop
           playsInline
           preload="metadata"
-          poster="/assets/hero/hero-image.jpg"
+          poster={asset("/assets/hero/hero-image.jpg")}
           aria-hidden="true"
         >
-          <source src="/assets/hero/hero-video.webm" type="video/webm" />
-          <source src="/assets/hero/hero-video.mp4" type="video/mp4" />
+          <source src={asset("/assets/hero/hero-video.webm")} type="video/webm" />
+          <source src={asset("/assets/hero/hero-video.mp4")} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/70 to-background" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(var(--primary)/0.18),transparent_60%)]" />
