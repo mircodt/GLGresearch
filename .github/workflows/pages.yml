@@ -3,6 +3,7 @@ name: Deploy hotely-homepage to GitHub Pages
 on:
   push:
     branches:
+      - master
       - claude/hotely-homepage-build-h5Jdg
   workflow_dispatch:
 
