@@ -1,5 +1,5 @@
 const isPages = process.env.GITHUB_PAGES === "true";
-const repo = "hotely-site";
+const repo = "GLGresearch";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
