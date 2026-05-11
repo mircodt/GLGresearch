@@ -123,7 +123,7 @@ export function Hero() {
               aria-label={badge.alt}
             >
               <Image
-                src={badge.src}
+                src={asset(badge.src)}
                 alt={badge.alt}
                 width={140}
                 height={42}

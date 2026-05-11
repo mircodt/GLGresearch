@@ -35,7 +35,7 @@ jobs:
       - name: Build static export
         env:
           GITHUB_PAGES: "true"
-          NEXT_PUBLIC_BASE_PATH: /GLGresearch
+          NEXT_PUBLIC_BASE_PATH: /hotely-site
         run: |
           npm run build
           touch out/.nojekyll

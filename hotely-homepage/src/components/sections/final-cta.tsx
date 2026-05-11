@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { content } from "@/lib/content/it";
+import { asset } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/reveal";
 
@@ -27,7 +28,7 @@ export function FinalCTA() {
           preload="metadata"
           aria-hidden="true"
         >
-          <source src={bgVideo} type="video/mp4" />
+          <source src={asset(bgVideo)} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-hero-gradient opacity-90 mix-blend-multiply" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />

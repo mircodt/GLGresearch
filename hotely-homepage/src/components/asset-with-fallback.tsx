@@ -4,7 +4,7 @@ import * as React from "react";
 import Image, { type ImageProps } from "next/image";
 import { ImageIcon } from "lucide-react";
 
-import { cn } from "@/lib/utils";
+import { asset, cn } from "@/lib/utils";
 
 type AssetWithFallbackProps = Omit<ImageProps, "onError" | "src"> & {
   src: string;
@@ -37,7 +37,7 @@ export function AssetWithFallback({
 
   return (
     <Image
-      src={src}
+      src={asset(src)}
       alt={alt}
       className={className}
       onError={() => {
